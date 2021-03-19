@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(25, 35, 45);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  text-align: center;
+  color: wheat;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #999;
+  margin: 5px;
+  text-decoration: none;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+  border-bottom: 2px solid;
+}
+
+.highlighted {
+  text-decoration: underline;
+  font-weight: 700;
+  color: white;
+}
+
+/* to remove number inputs up and down arrow*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
